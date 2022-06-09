@@ -1,0 +1,197 @@
+<div class="container footer-container">
+    <div class="footer__main">
+      <div class="footer__card">
+        <h2 class="heading heading--md footer__card-heading">About</h2>
+        <address class="footer__address">Susparsa Store Geneva, Switzerland</address>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a
+                class="footer__social-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link"
+            >
+              <span class="visually-hidden">Our facebook page</span>
+              <img class="footer__social-image" src="https://inquisitor1229.github.io/Susparsa-product-detail-page/img/footer/footer__facebook.svg" alt="" role="presentation">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a
+                class="footer__social-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link"
+            >
+              <span class="visually-hidden">Our instagram page</span>
+              <img class="footer__social-image" src="https://inquisitor1229.github.io/Susparsa-product-detail-page/img/footer/footer__instagram.svg" alt="" role="presentation">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__card">
+        <h2 class="heading heading--md footer__card-heading">Company</h2>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link"
+            >
+              Women
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Men
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Kids
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              About Us
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Our Materials
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__card">
+        <h2 class="heading heading--md footer__card-heading">Useful Links</h2>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Shipping Policy
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Return & Refund Policy
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Terms of Service
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <small class="footer__copyright">© Susparsa 2021</small>
+  </div>
+
+{% schema %}
+  {
+    "name": "Footer",
+	"tag": "footer",
+	"class": "footer",
+	"max_blocks": 4,
+	"blocks": [
+       {
+         "name": "About",
+         "type": "About",
+         "settings": [
+            {
+              "type": "text",
+              "id": "footer_heading_text",
+              "label": "Heading",
+              "default": "Quick links"
+            },
+			{
+              "type": "richtext",
+              "id": "footer__paragraph",
+              "label": "text"
+            },
+            {
+              "type": "text",
+              "id": "footer_link_fb",
+              "label": "FB link",
+              "default": "Quick links"
+            },
+			{
+              "type": "text",
+              "id": "footer_link_inst",
+              "label": "Instagram link",
+              "default": "Quick links"
+            }
+         ]
+       },
+       {
+         "name": "Menu",
+         "type": "Menu",
+         "settings": [
+            {
+              "type": "link_list",
+              "id": "menu_links",
+              "label": "Menu footer"
+            },
+            {
+              "type": "text",
+              "id": "footer_linklist_title",
+              "label": "Heading",
+              "default": "Quick links"
+            }
+         ]
+       }
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

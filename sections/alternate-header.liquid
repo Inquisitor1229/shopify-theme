@@ -1,0 +1,122 @@
+<div class="container header__container">
+    <div class="header-top">
+      <nav aria-label="Main" class="header-nav nav">
+        <a href="#content" class="skip-link visually-hidden">Skip to content</a>
+        <button
+            class="header__burger-button"
+            id="burger_menu_button"
+            type="button"
+            aria-labelledby="burger_menu_title"
+        >
+          <span class="header__burger-picture"></span>
+          <span class="visually-hidden" id="burger_menu_title">Open/Close navigation</span>
+        </button>
+        <div class="burger-menu" id="burger_menu" hidden>
+          <ul class="burger-menu__list" role="list">
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">Women</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">Men</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">Kids</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">Company</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">Account</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">Search</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="javascript:void(0)" class="burger-menu__link">
+                <span aria-hidden="true">Cart (0)</span>
+                <span class="visually-hidden">Cart. In cart 0 items</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="header-nav__list" role="list">
+          <li class="header-nav__item">
+            <a href="javascript:void(0)" class="header-nav__link">Women</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="javascript:void(0)" class="header-nav__link">Men</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="javascript:void(0)" class="header-nav__link">Kids</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="javascript:void(0)" class="header-nav__link">Company</a>
+          </li>
+          <li class="header-nav__item header-nav__item--logo">
+            <a href="javascript:void(0)" class="header-nav__link">
+              <span class="visually-hidden">home</span>
+              <img src="https://inquisitor1229.github.io/Susparsa-product-detail-page/img/header/header__logo.svg" alt="" role="presentation">
+            </a>
+          </li>
+          <li class="header-nav__item header-nav__item--second-list">
+            <a href="javascript:void(0)" class="header-nav__link">Account</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="javascript:void(0)" class="header-nav__link">Search</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="javascript:void(0)" class="header-nav__link">
+              <span aria-hidden="true">Cart (0)</span>
+              <span class="visually-hidden">Cart. In cart 0 items</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="dividing-line"></div>
+  <div class="container header-container">
+    <div class="header-bottom">
+      <nav class="breadcrumb nav" aria-label="Breadcrumb">
+        <div class="container breadcrumb-container">
+          <ol class="breadcrumb__list" role="list">
+            <li class="breadcrumb__item">
+              <a href="javascript:void(0)" class="breadcrumb__link">Home</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="javascript:void(0)" class="breadcrumb__link">Women</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--current">
+              <a href="javascript:void(0)" class="breadcrumb__link breadcrumb__link--current" aria-current="page">White unisex t-shirt</a>
+            </li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "Header",
+	"tag": "header",
+	"class": "header",
+    "settings": [
+		{
+          "type": "image_picker",
+          "id": "GAM",
+          "label": "Mount and grass..."
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
