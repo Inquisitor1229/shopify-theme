@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>White unisex t-shirt - Susparsa</title>
-  <link rel="stylesheet" href="https://inquisitor1229.github.io/Susparsa-product-detail-page/css/index.css">
-  <link rel="stylesheet" href="https://inquisitor1229.github.io/Susparsa-product-detail-page/css/fonts.css">
+  {{ 'index.css' | asset_url | stylesheet_tag }}
+  {{ 'fonts.css' | asset_url | stylesheet_tag }}
   <noscript>
     <style>
       .accordion__panel {
