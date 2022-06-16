@@ -13,18 +13,13 @@
         </button>
         <div class="burger-menu" id="burger_menu" hidden>
           <ul class="burger-menu__list" role="list">
-            <li class="burger-menu__item">
-              <a href="javascript:void(0)" class="burger-menu__link">Women</a>
-            </li>
-            <li class="burger-menu__item">
-              <a href="javascript:void(0)" class="burger-menu__link">Men</a>
-            </li>
-            <li class="burger-menu__item">
-              <a href="javascript:void(0)" class="burger-menu__link">Kids</a>
-            </li>
-            <li class="burger-menu__item">
-              <a href="javascript:void(0)" class="burger-menu__link">Company</a>
-            </li>
+            {% for link in section.settings.menu.links %}
+              <li class="burger-menu__item">
+                <a class="burger-menu__link" href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          <ul class="burger-menu__list" role="list">
             <li class="burger-menu__item">
               <a href="javascript:void(0)" class="burger-menu__link">Account</a>
             </li>
@@ -40,25 +35,26 @@
           </ul>
         </div>
         <ul class="header-nav__list" role="list">
+          {% for link in section.settings.menu.links %}
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="header-nav__item header-nav__item--logo">
+          <a href="javascript:void(0)" class="header-nav__link">
+            <span class="visually-hidden">home</span>
+            <img
+                    class="header__logo-picture"
+                    src="{{ section.settings.logo_img | image_url }}"
+                    alt=""
+                    role="presentation"
+                    style="width: 140px; height: 32px;"
+            />
+          </a>
+        </div>
+        <ul class="header-nav__list header-nav__list--second-list" role="list">
           <li class="header-nav__item">
-            <a href="javascript:void(0)" class="header-nav__link">Women</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="javascript:void(0)" class="header-nav__link">Men</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="javascript:void(0)" class="header-nav__link">Kids</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="javascript:void(0)" class="header-nav__link">Company</a>
-          </li>
-          <li class="header-nav__item header-nav__item--logo">
-            <a href="javascript:void(0)" class="header-nav__link">
-              <span class="visually-hidden">home</span>
-              <img src="https://inquisitor1229.github.io/Susparsa-product-detail-page/img/header/header__logo.svg" alt="" role="presentation">
-            </a>
-          </li>
-          <li class="header-nav__item header-nav__item--second-list">
             <a href="javascript:void(0)" class="header-nav__link">Account</a>
           </li>
           <li class="header-nav__item">
@@ -103,7 +99,7 @@
     "settings": [
 		{
           "type": "image_picker",
-          "id": "GAM",
+          "id": "logo_img",
           "label": "Mount and grass..."
         },
         {

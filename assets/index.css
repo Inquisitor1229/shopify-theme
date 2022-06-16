@@ -120,7 +120,7 @@ body {
     padding: 34px 56px 32px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     .header-top {
         padding: 16px 16px 8px;
     }
@@ -136,6 +136,7 @@ body {
     .header-nav__list {
         margin-left: auto;
         width: 100%;
+        display: none;
     }
 }
 
@@ -153,7 +154,13 @@ body {
     max-width: 150px;
 }
 
-.header-nav__item--second-list {
+@media(max-width: 1024px) {
+    .header-nav__item--logo {
+        margin-top: 0;
+    }
+}
+
+.header-nav__list--second-list {
     margin-left: auto;
 }
 
@@ -247,6 +254,10 @@ body {
 .burger-menu__link {
     color: var(--palette-mirage);
     text-decoration: none;
+}
+
+.header-nav {
+    display: flex;
 }
 
 @media(max-width: 1024px) {
